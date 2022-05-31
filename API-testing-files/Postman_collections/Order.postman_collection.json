@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "bc899d89-a06b-4500-b4f6-20994465b1ba",
+		"name": "Order",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/order/creation Get order creation page data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUzMjUyODkxLCJpYXQiOjE2NTMxNjY0OTEsImp0aSI6Ijg3YmY0N2NiYzg0ZjQ1MGI5NThkNzc2YTZhZTZkZTFkIiwidXNlcl9pZCI6MjIzfQ.9JDjf11HTrTj13Bqi5ASffZ64rHmCi0LYAmsQ_q4cDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/order/creation/",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"order",
+						"creation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/order/create/ Create order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUzMjUyODkxLCJpYXQiOjE2NTMxNjY0OTEsImp0aSI6Ijg3YmY0N2NiYzg0ZjQ1MGI5NThkNzc2YTZhZTZkZTFkIiwidXNlcl9pZCI6MjIzfQ.9JDjf11HTrTj13Bqi5ASffZ64rHmCi0LYAmsQ_q4cDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name",
+							"value": "Peter Basár",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "email@email.com",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Czech Republic",
+							"type": "text"
+						},
+						{
+							"key": "street",
+							"value": "Street 1",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Prague",
+							"type": "text"
+						},
+						{
+							"key": "postal_code",
+							"value": "160 00",
+							"type": "text"
+						},
+						{
+							"key": "telephone_number",
+							"value": "+421 123 456 789",
+							"type": "text"
+						},
+						{
+							"key": "information_for_delivery",
+							"value": "Information",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/order/create/",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"order",
+						"create",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/order/ Get orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUzMjUyODkxLCJpYXQiOjE2NTMxNjY0OTEsImp0aSI6Ijg3YmY0N2NiYzg0ZjQ1MGI5NThkNzc2YTZhZTZkZTFkIiwidXNlcl9pZCI6MjIzfQ.9JDjf11HTrTj13Bqi5ASffZ64rHmCi0LYAmsQ_q4cDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/order/",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"order",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

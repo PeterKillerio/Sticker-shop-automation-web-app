@@ -1,0 +1,1 @@
+MEDIA_PATH = 'https://sticker-app-storage.s3.amazonaws.com/'

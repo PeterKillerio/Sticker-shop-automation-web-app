@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "c3f85d36-6bf6-41fb-ab99-7f84ff71224d",
+		"name": "Listing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/stickers/ Get sticker list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/stickers/",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"stickers",
+						""
+					]
+				},
+				"description": "Login"
+			},
+			"response": []
+		},
+		{
+			"name": "api/sticker/2/ Get sticker page data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/sticker/2/",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"sticker",
+						"2",
+						""
+					]
+				},
+				"description": "Login"
+			},
+			"response": []
+		},
+		{
+			"name": "api/stickers/?tags=Animal&names=ctu&longestside=57 Get sticker list filtered",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/stickers/?tags=Animal&names=ctu&longestside=57",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"stickers",
+						""
+					],
+					"query": [
+						{
+							"key": "tags",
+							"value": "Animal"
+						},
+						{
+							"key": "names",
+							"value": "ctu"
+						},
+						{
+							"key": "longestside",
+							"value": "57"
+						}
+					]
+				},
+				"description": "Login"
+			},
+			"response": []
+		}
+	]
+}

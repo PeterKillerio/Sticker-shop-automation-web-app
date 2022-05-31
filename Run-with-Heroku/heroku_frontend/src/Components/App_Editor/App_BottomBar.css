@@ -1,0 +1,16 @@
+.canvasBottomBar{
+  /* Center on the bottom side */
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 20px 20px 0px 0px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.imageScaleSliderGrid{
+  min-width: 150px;
+  padding-left: 5px;
+}
+

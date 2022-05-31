@@ -1,0 +1,14 @@
+.filterContainer{
+  text-align: center;
+  padding: 30px;
+}
+.tagFilter{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+.sideSlider{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}

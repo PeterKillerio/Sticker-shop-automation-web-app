@@ -1,0 +1,45 @@
+.orderDivWrapper{
+  outline: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+}
+.centerAlign{
+  text-align: center;
+}
+.leftAlign{
+  text-align: left;
+}
+.rightAlign{
+  text-align: right;
+}
+.orderStickerImgWrapper{
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  
+  /* Align vertically */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.orderStickerImg{
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  /* Make black stickers visible with shadow */
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.39));
+  
+  /* Align horizontally */
+  margin: 0 auto;
+  /* Align vertically */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+

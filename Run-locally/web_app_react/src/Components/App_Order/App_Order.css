@@ -1,0 +1,18 @@
+.orderWrapper{
+  min-height: 100vh;
+}
+.formWrapper{
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.orderHeaderWrapper{
+  text-align: center;  
+}
+.popupErrorInfoText{
+  font-size: 13px;
+}
+.priceText{
+  text-align: center;
+  background-color: red;
+}

@@ -1,0 +1,37 @@
+.stickerPageContainerWrapper{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.stickerPageSideWrapper{
+  /* background-color: red; */
+  padding: min(25px, 3vw);
+}
+.stickerPageSide{
+  /* background-color: blue; */
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .leftSideWrapper{float: right;}
+}
+@media only screen and (max-width: 899px) {
+  .leftSideWrapper{float: center;}
+}
+
+.stickerImageCollection canvas:first-child{
+  width: 100%;
+  height: auto;
+}
+.stickerImageCollection img:first-child{
+  width: 100%;
+  height: auto;
+}
+.stickerImageCollection img:last-child{
+  width: 33%;
+  height: auto;
+  display:block;
+  margin: auto;
+}

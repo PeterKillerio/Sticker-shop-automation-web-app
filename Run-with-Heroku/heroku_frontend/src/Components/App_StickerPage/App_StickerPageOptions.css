@@ -1,0 +1,19 @@
+.stickerPageSideWrapper{
+  padding: min(25px, 3vw);
+}
+.stickerPageSide{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .rightSideWrapper{float: left;}  
+}
+@media only screen and (max-width: 899px) {
+  .rightSideWrapper{float: center;}  
+}
+.stickerPageButtonWrapper button{
+  margin: 5px 5px 5px 0px;
+}
+

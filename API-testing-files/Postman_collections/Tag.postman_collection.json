@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "7ed2d7f8-db15-4995-9ab7-69a568033fef",
+		"name": "Tag",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/tags/?text=ctu Get filtered stickers Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/tags/?text=ctu",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"tags",
+						""
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "ctu"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

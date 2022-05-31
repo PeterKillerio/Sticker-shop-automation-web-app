@@ -1,0 +1,93 @@
+/* Main wrappers for sticker item */
+.stickerItemContainer{
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pickBlocker{
+  position: absolute;
+  height: 125%;
+  top: -25%;
+  width: 100%;
+  background-color: rgba(245, 245, 245,0.90);
+  border-radius: 25px;
+  z-index: 7;
+}
+.pickBlocker p{
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.stickerItemContainer:hover .stickerItemWrapper{
+  box-shadow: 0px 5px 17px 5px rgba(0,0,0,0.3);
+  
+}
+.stickerItemWrapper{
+  
+  margin: auto;
+  border-radius: 25px;
+  transition: box-shadow 0.3s ease-in-out;
+  
+}
+
+/* Sticker image combination logic */
+.stickerItemImageWrapperWrapper{
+  margin: auto;
+  height: 110px;
+  width: 110px;
+  padding: 15px;
+}
+.stickerItemImageWrapper{
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.stickerItemImageWrapper img{
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  z-index: 9;
+
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.39));
+}
+
+/* Wrapper for buttons and text */
+.stickerInteractiveWrapper{
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+
+  object-fit:contain;
+}
+
+/* Sticker buttons */
+.stickerButton{
+  position: absolute;
+  z-index: 18;
+  top: -19px;
+}
+.cartButton{left: 4px; z-index: 5;}
+.favoritesButton{right: 4px; z-index: 10;}
+
+/* Sticker price text */
+.stickerPrice{
+  position: absolute;
+  width: 100%;
+  top: -25px;
+}
+/* Sticker text*/
+.stickerText{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.stickerMaterialStyleText{
+  font-size: 12px;
+}

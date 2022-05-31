@@ -1,0 +1,67 @@
+.desktopNavigationMenuContainer{
+  max-width: 1920px;
+  margin: auto;
+}
+/* Text link menu */
+.navigationTextLinkWrapper{
+  margin: auto;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+.navigationTextLink{
+  text-decoration: none;
+  color: inherit;
+}
+.navigationButton{
+  all: unset;
+  cursor: pointer;
+  height: 35px;
+  color: inherit;
+  font-weight: 300;
+  font-size: inherit;
+}
+
+/* Image link for logo*/
+.logoWrapper{
+  text-align: center;
+}
+.logo{
+  height: 50px;
+  width: auto;
+  aspect-ratio: 1 / 1;
+}
+
+/* Burger menu*/
+.burgerMenuIconWrapper{
+  height: 53px;
+}
+.burgerMenuIcon{
+  aspect-ratio: 1 / 1;
+  float: right;
+}
+
+/* Mobile popup menu*/
+.closeMobileMenuIconWrapper{
+  float: right;
+}
+.mobileMenuTabGrid{
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  color: inherit;
+}
+.mobileMenuTab{
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+}
+.mobileMenuTabContainer{
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  border-radius: 25px;
+  /* background-color: rgba(255, 255, 255, 150); */
+  box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.14);
+}

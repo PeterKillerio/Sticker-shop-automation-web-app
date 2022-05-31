@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "6d50c9d6-401c-4a06-ab1c-d27a0e651103",
+		"name": "Editor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/editor/ Get editor page data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/editor/",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"editor",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

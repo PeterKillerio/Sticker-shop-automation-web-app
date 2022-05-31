@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "a475ef81-463e-478b-a9df-9f7aadeed3aa",
+		"name": "Favorites",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/favorites/remove/ Remove favorite sticker",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUzMjUyODkxLCJpYXQiOjE2NTMxNjY0OTEsImp0aSI6Ijg3YmY0N2NiYzg0ZjQ1MGI5NThkNzc2YTZhZTZkZTFkIiwidXNlcl9pZCI6MjIzfQ.9JDjf11HTrTj13Bqi5ASffZ64rHmCi0LYAmsQ_q4cDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "sticker_style_option_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/favorites/remove/",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"favorites",
+						"remove",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites/ Get favorites stickers page data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUzMjUyODkxLCJpYXQiOjE2NTMxNjY0OTEsImp0aSI6Ijg3YmY0N2NiYzg0ZjQ1MGI5NThkNzc2YTZhZTZkZTFkIiwidXNlcl9pZCI6MjIzfQ.9JDjf11HTrTj13Bqi5ASffZ64rHmCi0LYAmsQ_q4cDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/favorites/",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"favorites",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites/add/ Add favorite sticker",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUzMjUyODkxLCJpYXQiOjE2NTMxNjY0OTEsImp0aSI6Ijg3YmY0N2NiYzg0ZjQ1MGI5NThkNzc2YTZhZTZkZTFkIiwidXNlcl9pZCI6MjIzfQ.9JDjf11HTrTj13Bqi5ASffZ64rHmCi0LYAmsQ_q4cDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "sticker_style_option_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/favorites/add/",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"favorites",
+						"add",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

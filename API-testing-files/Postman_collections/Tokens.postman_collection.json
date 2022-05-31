@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "1f3eae6d-163d-43e8-9a0d-7ae02c3f8bec",
+		"name": "Tokens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/token/temp/ Get temporary user token pair",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/token/temp/?format=json",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"token",
+						"temp",
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				},
+				"description": "Get access and refresh token"
+			},
+			"response": []
+		},
+		{
+			"name": "api/token/register/ Register user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "testuser",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "testuser@testuser.testuser",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testuser",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/token/register/?format=json",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"token",
+						"register",
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/token/ Get tokens",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "peter.basar0",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "peter.basar0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/token/?format=json",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"token",
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/token/verify/ Verify access token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ3NDY1MDkyLCJpYXQiOjE2NDczNzg2OTIsImp0aSI6IjA0MDAyMzVmOTM2MTRjNGVhNmI1MzQ0NjA5ZDM5NjBlIiwidXNlcl9pZCI6N30.xiQFn9FaiAxTiG1RnISh8CWAmSZw_vQf1_6Ea5NpSSw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/token/verify/?format=json",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"token",
+						"verify",
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/token/refresh/ Get access token using refresh token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1Mzc3MTI5MSwiaWF0IjoxNjUzMTY2NDkxLCJqdGkiOiJkYzI0MDI1ODZmMzk0YTg3YmY0YjlhMmY1YjZkNTI0NyIsInVzZXJfaWQiOjIyM30.Hy6aL94ZyTgMZSrFs9EmTx-Fm7wUZv8urmCjfbpJxsQ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/token/refresh/?format=json",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"token",
+						"refresh",
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/token/login/ login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "testuser",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testuser",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://sticker-application-backend.herokuapp.com/api/token/login/?format=json",
+					"protocol": "http",
+					"host": [
+						"sticker-application-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"token",
+						"login",
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

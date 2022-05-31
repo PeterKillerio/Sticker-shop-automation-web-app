@@ -1,0 +1,9 @@
+/* Main wrapper for sticker listing */
+.stickerList{
+  text-align:center;
+  padding-bottom: 40px;
+}
+.stickerListInnerWrapper{
+  margin: auto;
+  max-width: 960px;
+}
