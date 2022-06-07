@@ -96,6 +96,10 @@ If the database is accessible by the worker and this computer has a default prin
 
 ## Media
 
+#### Architecture
+
+![](Media%5Capplication_architecture.png)
+
 #### Filtering and adding stickers to cart and favorites
 
 ![](Media/homepage.gif)
@@ -111,6 +115,8 @@ If the database is accessible by the worker and this computer has a default prin
 ##### Register and login
 
 ![](Media/registerlogin.gif)
+
+##### Additional media including current and past designs in <b>Media/</b> folder
 
 ## License
 
