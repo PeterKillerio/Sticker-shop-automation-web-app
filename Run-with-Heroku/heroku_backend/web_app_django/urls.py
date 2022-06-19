@@ -49,7 +49,7 @@ urlpatterns = [
     path('api/cart/remove/', app_cart_favorites_views.RemoveStickerFromCart.as_view(), name='RemoveStickerFromCart'),
     path('api/cart/canvas/remove/', app_cart_favorites_views.RemoveCanvasFromCart.as_view(), name='RemoveCanvasFromCart'),
     path('api/cart/add/', app_cart_favorites_views.AddStickerToCart.as_view(), name='AddStickerToCart'),
-    path('api/cart/add/canvas', app_cart_favorites_views.AddCanvasToCart.as_view(), name='AddCanvasToCart'),
+    path('api/cart/add/canvas/', app_cart_favorites_views.AddCanvasToCart.as_view(), name='AddCanvasToCart'),
 
     # Order views
     path('api/order/creation/', app_order_views.OrderCreationPage.as_view(), name='OrderCreationPage'),
