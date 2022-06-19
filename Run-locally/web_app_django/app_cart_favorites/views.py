@@ -11,6 +11,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
 
 from PIL import Image, ImageColor, ImageChops
+import PIL.ImageOps
 import requests
 import base64
 import io
@@ -257,7 +258,7 @@ class AddCanvasToCart(APIView):
 
         ## Edit to-be-saved images 
         image_canvas = Image.open(io.BytesIO(image_canvas_decoded))
-        crop_image = Image.open(io.BytesIO(crop_image_str.content))
+        crop_image = Image.open(io.BytesIO(crop_image_str.content)).convert('RGBA')
 
         ## Place image on colored background or metalic background
         image_background = Image.new("RGBA", crop_image.size, background_color_rgb) # Create an rgba/metalic background 
@@ -274,10 +275,19 @@ class AddCanvasToCart(APIView):
 
         # Apply mask on 'image_canvas', and 'image_background' 
         # Crop print image
+
         image_canvas = ImageChops.multiply(ImageChops.invert(crop_image), image_canvas)
         # Apply image on background and crop it
         image_background.paste(image_canvas, (0, 0), image_canvas)
-        image_background = ImageChops.multiply(ImageChops.invert(crop_image), image_background)
+        image_background = ImageChops.multiply(ImageChops.invert(crop_image).convert('RGBA'), image_background)
+
+
+        # Finally, convert the crop_image to RGB on white background and invert it so that the design-space will be black
+        white_background = Image.new("RGBA", crop_image.size, "#FFFFFF")
+        white_background.paste(crop_image.convert('RGBA'), (0, 0), crop_image.convert('RGBA'))
+        crop_image = white_background.convert("RGB")  
+        crop_image = PIL.ImageOps.invert(crop_image.convert("RGB"))
+
 
         ## Create temporary file (neccessary for S3 FileField upload)
         ## and save the canvas to the temporary file 
